@@ -434,7 +434,7 @@ body {
     }
 
     .hero-content {
-        padding: 40px 40px;
+        padding: 50px 20px;
         font-size: 15px;
         top: 500px;
         left: 50px;
@@ -527,7 +527,7 @@ body {
      }
 
      #access .access-map {
-        width: 400px;
+        width: 370px;
      }
 
      #reservation .btn-reservation {
