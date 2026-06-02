@@ -434,10 +434,10 @@ body {
     }
 
     .hero-content {
-        padding: 40px 25px;
+        padding: 40px 40px;
         font-size: 15px;
         top: 500px;
-        left: 100px;
+        left: 50px;
     }
 
     #about .problem h3 {
@@ -449,7 +449,7 @@ body {
      }
 
      #about .solution h2 {
-        font-size: 30px;
+        font-size: 20px;
 
      }
 
@@ -461,16 +461,20 @@ body {
      #about .service-cards {
         width: 100%;
         flex-direction: column; 
-        padding: 0;
+        padding: 20px 15px;
         margin: 0;
      }
 
      #about .service-cards img {
-        width: 420px;
+        width: 100%;
      }
 
      #about .service-cards h3 {
         margin: 15px auto;
+     }
+
+     #about .service-cards p {
+        padding: 15px 30px;
      }
 
      #about .service-cards .card-1 {
@@ -481,6 +485,14 @@ body {
      #about .service-cards .card-2 {
         width: 100%;
         margin: 40px auto;
+     }
+
+     #menu .section-title {
+        margin: 70px auto;
+     }
+
+     #menu .section-subtitle {
+        padding-bottom: 30px;
      }
 
      #menu .container {
@@ -499,7 +511,7 @@ body {
      }
 
      #staff .staff-img img {
-        width: 420px;
+        width: 100%;
      }
 
      #staff .staff-info p {
@@ -519,6 +531,6 @@ body {
      }
 
      #reservation .btn-reservation {
-        padding: 30px 50px;
+        padding: 30px 30px;
      }
 }
