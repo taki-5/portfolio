@@ -1,536 +1,299 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    background-color: #fff4e6;
-}
-
 #header {
-    box-sizing: border-box;
-    width: 100%;
-    display: flex;
+    max-width: 960px;
+    margin: 0 auto;
     justify-content: space-between;
-    align-items: center;
-    background-color:rgb(0, 83, 8);
-}
-
-.site-title {
-    width: 200px;
-    height: 100px;
-    overflow: hidden;
-}
-
-.site-title img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-}
-
-#header .header-right a {
-    color: #1e1515;
-    text-decoration: none;
-}
-
-#header .header-right {
-    font-size: 30px;
-    text-align: center;
-    background: linear-gradient(135deg, #ff9233, #ff6b6b);
-    padding: 20px 50px;
-    border-radius: 50px;
-    margin-right: 30px;
-}
-
-.hero {
-    background-image: url('https://media.istockphoto.com/id/2158569297/ja/%E3%82%B9%E3%83%88%E3%83%83%E3%82%AF%E3%83%95%E3%82%A9%E3%83%88/%E3%82%A2%E3%82%B8%E3%82%A2%E4%BA%BA%E5%A5%B3%E6%80%A7%E3%81%AE%E7%BE%8E%E3%81%97%E3%81%84%E6%A8%AA%E9%A1%94.jpg?s=612x612&w=0&k=20&c=ij_l6QQXECVCm81anNNqpS3UXwVkBVwWwT6E1mWWNSY=');
-    height: 100vh;
-    background-size: cover;
-    background-position: relative;
-    background-repeat: no-repeat;
-    /* 文字を真ん中に配置する */
     display: flex;
-    justify-content: left;
     align-items: center;
-    text-align: center;
-    color: #ffffff; /* 文字を白にするなど */
+    box-sizing: border-box;
+    height: 270px;
+    padding: 0 4%;
+
 }
 
-.hero-content {
-    font-family: 'Tenor Sans', serif;
-    position: absolute;
-    top: 60%;  /* 上から20%の位置 */
-    left: 50%; /* 左から10%の位置 */
-    background-color: rgba(255, 255, 255, 0.591); /* 非常に薄い白 */
-    backdrop-filter: blur(10px); /* 背景をぼかす */
-    -webkit-backdrop-filter: blur(10px); /* Safari用 */
-    border-radius: 50%;
-    padding: 100px 50px;
-    font-size: 30px;
-    color: #0c0d0c;
-    border: 2px solid rgb(0, 100, 10); /* 白い線で囲む */
-    outline: 4px solid rgb(56, 125, 0); /* さらに外側に色をつける */
-    outline-offset: 5px; /* 線と線の間に隙間を作る */
+.about img {
+    width: 120px;
 }
 
-/*.hero-content h2 {
-   /* 背景を黒の半透明にする */
-   /* background-color: rgba(61, 31, 0, 0.866); 
-  
-    /* 文字の色 */
-   /* color: #fff;
-  
-    /* 文字と背景の間の余白を調整 */
-    /*padding: 10px 20px;
-  
-    /* 角を少し丸くすると柔らかい印象に（お好みで） */
-    /*border-radius: 5px;
-  
-    /* 背景を文字の幅に合わせる */
-    /*display: inline-block; 
-} */
-
-body {
-    font-family: 'Noto Sans JP', sans-serif;
+#header ul {
+    display: flex;
+    list-style: none;
+    padding: 10px 20px;
 }
 
-#about {
-    width: 100%;
-    text-align: center;
-}
-
-#about .problem {
-    font-family: 'Tenor Sans', serif;
-    padding:150px 0;
-    background-color: #f7f6f5;
+#header li {
+    margin-left: 30px;
+    font-size: 14.4px;
     
 }
 
-#about .problem  li {
-    list-style: none;
-    padding-top: 30px;
+#header li a {
+    color: #24292e;
+    text-decoration: none;
 }
 
-#about .solution {
-    font-family: 'Tenor Sans', serif;
-    padding: 150px 0;
-    background-color: rgb(255, 241, 228);
+.icon {
+    box-sizing: content-box;
+    width: 20px;
 }
 
-#about .solution h2 {
-    color: #ff6905;
-}
-
-#about .solution p {
-    color: #117000;
-    padding: 30px 0;
-}
-
-#about .service-cards {
+#mainvisual img {
+    max-width: 1920px;
+    box-sizing: content-box;
     width: 100%;
-    display: flex;
-    align-items: start;
-    justify-content: space-between;
-    margin-bottom: 100px;
-    padding: 0 70px 50px 70px;
-    background-color: #fff4e6;
-     color: #028400;
+    height: 420px;
+    object-fit: cover;
 }
 
-#about .service-cards .card-1 {
-    margin: 200px 30px 0 20px;
-    font-family: 'Tenor Sans', serif;
+.wrapper {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto 130px auto;
+    padding: 0 4%;
+    font-size: 0.9rem;
+    box-sizing: border-box;
 }
 
-#about .service-cards .card-2 {
-    margin: 500px 20px 0 20px;
-    font-family: 'Tenor Sans', serif;
-}
-
-#about .service-cards img {
-    border-radius: 30px;
-}
-
-#about .service-cards h3 {
-    font-size: 30px;
-    margin: 15px auto;
-}
-
-#about .service-cards p {
-    font-size: 20px;
-    color: #b45d00;
-}
-
-#menu .container {
+.section-title {
     text-align: center;
-    padding: 50px 100px;
+    max-width: 960px;
+    padding: 40px 0;
+    font-size: 24px;
 }
 
-.menu-item {
-    display: flex;
-    justify-content: space-between; /* 左右の両端に振り分ける */
-    align-items: baseline;          /* 文字の底辺を揃える */
-    border-bottom: 1px dashed #ccc; /* 下側にうっすら点線を敷く */
-    padding: 15px 0;                /* 上下の隙間 */
+#about ul {
+    padding-left: 0;
+    margin: 30px 0; 
+    text-align: left;
 }
 
-#staff {
-    max-width: 100%;
-    margin: 150px 60px;
+#about li {
+    list-style: none;
+    font-size: 14.4px;
 }
 
-#staff .section-title {
+#about li:first-child {
+    margin-bottom: 30px;
+}
+
+#about p {
+    font-size: 14.4px;
+    text-align: left;
+}
+
+#works {
     text-align: center;
-    margin-bottom: 100px;
+    max-width: 960px;
+    width: 100%;
 }
 
-#staff .staff-card {
+#works ul {
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    list-style: none;
+    padding-left: 0px;
 }
 
-#staff .staff-img img {
-    width: 80%;
+#works img {
+    width: 250px;
     height: auto;
     text-align: center;
 }
 
-#staff .staff-info {
-    text-align: start;
-}
-
-#staff .staff-info p {
-    padding: 0 0 30px 0;
-}
-
-#staff .staff-info h3 {
-    padding: 15px 0;
-}
-
-#reviews {
-    margin: 300px 50px;
-}
-
-.reviews-container {
+#news {
     text-align: center;
+    max-width: 960px;
 }
 
-#reviews .section-title {
-    text-align: center;
-}
-
-#reviews .section-subtitle {
-    text-align: center;
-}
-
-.reviews-card {
-  display: flex;
-  flex-direction: column; /* 縦に並べる指定 */
-  gap: 30px;              /* カードとカードの間の隙間 */
-  align-items: center;    /* 中央に寄せる */
-  padding: 40px 0;
-  margin-top: 50px;
-}
-
-.reviews-card {
-  background-color: #ffffff;
-  max-width: 100%;       /* 横に広がりすぎないように制限（ここがコツ！） */
-  padding: 30px;
-  
-  border-radius: 8px;
-  text-align: center;
-  /* 美容室っぽい、上品で非常に薄い影 */
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03); 
-  border: 1px solid #f0f0f0; /* ほんの少しフチ線を入れると締まります */
-}
-
-/* カード内の細かいデザイン */
-.reviews-info {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 15px;
-  font-size: 14px;
-  color: #888;
-}
-
-#reviews .stars {
-  color: #c5a880; /* 星を上品なゴールド（ベージュ）系に */
-}
-
-.reviews-title {
-  font-size: 18px;
-  color: #333;
-  margin-bottom: 10px;
-  font-weight: 600;
-}
-
-.reviews-text {
-  font-size: 15px;
-  color: #555;
-  line-height: 1.7; /* 行間を広げて読みやすく */
-}
-
-#access {
-    width: 100%;
-    text-align: center;
-}
-
-#access .access-wrapper {
+#news dl {
     display: flex;
-    margin: 100px 100px;
+    flex-wrap: wrap;
+    width: 100%;
+    border-top: solid 1px #c8c8c8;
 }
 
-#access .access-map {
-    width: 700px;
-    margin-right: 70px;
+#news dt {
+    width: 30%;
+    padding: 10px 0;
+    border-bottom: solid 1px #c8c8c8;
 }
 
-#access .access-info {
+#news dd {
+    width: 70%;
+    padding: 10px 0;
+    margin-left: 0;
     text-align: start;
+    border-bottom: solid 1px #c8c8c8;
 }
 
-#access .access-info h3 {
-    color: rgb(0, 83, 8);
-    margin-bottom: 10px;
-}
-
-#access .access-info dd {
-    padding: 5px 0 15px 20px;
-}
-
-#reservation {
+#contact {
+    max-width: 960px;
     text-align: center;
-    margin: 200px auto;
 }
 
-#reservation .reservation-catch {
-    margin: 50px auto;
-    color:rgb(2, 102, 0);
+.form-item {
+    display: flex;
+    margin: 20px auto;
 }
 
-#reservation .btn-reservation {
-    color:rgb(0, 100, 10);
-    background: linear-gradient(135deg, #ff9233, #ff6b6b);
-    font-size: 30px;
-    font-family: 'Tenor Sans', serif;
-    text-decoration: none;
-    padding: 30px 200px;
-    margin: 50px auto;
-    border-radius: 50px;
+.form-item label {
+    flex-basis: 120px;
+    flex-shrink: 0;
+    text-align: left;
 }
 
-#footer-content {
+.form-item input {
+    width: 70%;
+    height: 43px;
+    flex-grow: 1;
+    border: 1px solid #c8c8c8;
+} 
+
+.form-item textarea {
+    width: 70%;
+    height: 200px;
+    flex-grow: 1;
+    border: 1px solid #c8c8c8;
+    align-items: flex-start;
+}
+
+button {
     text-align: center;
-    font-size: 10px;
+    width: 200px;
+    height: 53px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: white;
+    color: #000;
+    border: 1px solid #000;
+}
+
+footer {
+    text-align: center;
+    background-color: #24292e;
+    color: #fff;
+    font-size: 8px;
+    padding: 10px 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
+body {
+    margin: 0;
 }
 
 
 
 
 
-@media screen and (max-width: 1024px) {
+@media (max-width: 1024px) {
+    .work ul {
+        flex-direction: column;
+    }
+
+    #mainvisual img {
+        max-width: 1024px;
+        width: 100%;
+        height: auto;
+    }
+
     #header {
+        height: auto;
+    }
+
+    .about img {
         width: 100%;
     }
 
-    .hero {
-        background-size: cover;
-        background-position: center;
+    #works img {
+        width: 100%;
     }
 
-    .hero-content {
-        top: 60%;
-        left: 40%;
-    }
-
-    #about .problem h3 {
-        font-size: 40px;
-    }
-
-    #about .problem li {
-        font-size: 30px;
-    }
-
-    #about .solution h2 {
-        font-size: 45px;
-    }
-
-    #about .solution p {
-        font-size: 30px;
-        padding: 50px 120px;
-    }
-
-    #about .service-cards {
+    .form-item {
         flex-direction: column;
-        text-align: center;
+    }
+
+    .form-item label {
+        flex-basis: auto;
+        margin-bottom: 10px;
+    }
+
+    .form-item input,
+    .form-item textarea {
+        width: 100%;
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    #header {
+        justify-content: center;
+        flex-direction: column;
+        height: auto;
         align-items: center;
-    }
-
-    #about .service-cards h3 {
-        font-size: 30px;
-    }
-
-    #about .service-cards p {
-        font-size: 20px;
-    }
-
-    #about .service-cards .card-1 {
-        margin: 100px auto;
-
-    }
-
-     #about .service-cards img {
-        width:800px;
-     }
-
-    #about .service-cards .card-2 {
-        margin: 100px auto;
-    }
-
-    #access .access-wrapper {
-        flex-direction: column;
-        margin: 0;
-        padding: 0;
-    }
-
-    #access .access-map {
-        width: 900px;
-        text-align: center;
-        margin: 50px auto;
-        padding: 10px auto;
-    }
-
-    #access .access-info {
-        text-align: center;
-    }
-
-    #access .info-list {
-        width: 100%;
-        max-width: 360px;
-        text-align: start;
+        max-width: 100%;
+        display: block;
         margin: 0 auto;
     }
-}
 
-
-
-
-
-@media screen and (max-width: 430px) {
-    #header {
-        width: 100%;
-    }
-
-    #header .header-right {
-        padding: 10px 30px;
-        margin-right: 10px;
-    }
-
-    .hero {
-        height: 600px;
-        background-size: 100%;
-        background-color: white;
-    }
-
-    .hero-content {
-        padding: 50px 20px;
-        font-size: 15px;
-        top: 500px;
-        left: 50px;
-    }
-
-    #about .problem h3 {
-        font-size: 25px;
-    }
-
-     #about .problem li {
-        font-size: 15px;
-     }
-
-     #about .solution h2 {
-        font-size: 20px;
-
-     }
-
-     #about .solution p {
-        font-size: 20px;
-        padding: 40px 10px;
-     }
-
-     #about .service-cards {
-        width: 100%;
-        flex-direction: column; 
-        padding: 20px 15px;
-        margin: 0;
-     }
-
-     #about .service-cards img {
-        width: 100%;
-     }
-
-     #about .service-cards h3 {
-        margin: 15px auto;
-     }
-
-     #about .service-cards p {
-        padding: 15px 30px;
-     }
-
-     #about .service-cards .card-1 {
-        width: 100%;
-        margin: 40px auto;
-     }
-
-     #about .service-cards .card-2 {
-        width: 100%;
-        margin: 40px auto;
-     }
-
-     #menu .section-title {
-        margin: 70px auto;
-     }
-
-     #menu .section-subtitle {
-        padding-bottom: 30px;
-     }
-
-     #menu .container {
+    #header h1{
         width: 100%;
         text-align: center;
-        padding: 150px 50px 50px 50px;
-     }
+        margin-bottom: 0px;
+    }
 
-     #staff {
-        margin: 150px 0;
+    #header ul {
+        margin: 0 auto;
+
+    }
+
+    #header a {
+        font-size: 12,8px;
+    }
+
+    .wrapper {
+        margin: 0 auto;
+    }
+
+    #works {
+        max-width: 100%;
         text-align: center;
-     }
+    }
 
-     #staff .staff-card {
+    #works img {
+        max-width: 100%;
+
+    }
+
+    #news dl {
         flex-direction: column;
-     }
-
-     #staff .staff-img img {
         width: 100%;
-     }
+    }
 
-     #staff .staff-info p {
-        padding: 15px 0 15px 10px;
-     }
+    #news dt {
+        text-align: left;
+        padding: 15px 15px 0 15px;
+        border-bottom: none;
+    }
 
-     #staff .staff-info h3 {
-        padding-left: 10px;
-     }
-
-     #reviews {
-        margin: 300px 25px;
-     }
-
-     #access .access-map {
-        width: 370px;
-     }
-
-     #reservation .btn-reservation {
-        padding: 30px 30px;
-     }
+    #news dd {
+        align-items: center;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 15px 15px 15px;
+    }
 }
