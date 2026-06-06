@@ -449,7 +449,7 @@ body {
      }
 
      #about .solution h2 {
-        font-size: 20px;
+        font-size: 30px;
 
      }
 
@@ -470,10 +470,12 @@ body {
      }
 
      #about .service-cards h3 {
+        font-size: 25px;
         margin: 15px auto;
      }
 
      #about .service-cards p {
+        font-size: 20px;
         padding: 15px 30px;
      }
 
