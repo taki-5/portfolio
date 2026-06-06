@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>模写コーディング２</title>
+</head>
+<body>
+    <header id="header">
+        <h1 class="site-title">
+           <a href="index.html">
+                <img src="https://code-jump.com/demo/html/portfolio1/img/logo.svg" alt="My Work">
+            </a>
+        </h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="#works">Works</a>
+                </li>
+                <li>
+                   <a href="#news">News</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/" target="_blank">
+                      <img class="icon" src="https://code-jump.com/demo/html/portfolio1/img/icon-instagram.png" alt="インスタグラム">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="mainvisual">
+            <picture>
+                <source media="(max-width: 768px)" srcset="https://code-jump.com/demo/html/portfolio1/img/mainvisual-sp.jpg">
+                <img src="https://code-jump.com/demo/html/portfolio1/img/mainvisual-pc.jpg">
+            </picture>
+        </div>
+        <section id="about" class="wrapper">
+            <h2 class="section-title">About</h2>
+            <ul>
+                <li>Xxxxx Ashley</li>
+                <li>2th Floor xxxxx Building x-x-x Nishiazabu, Minato-ku, Tokyo 106-0031 Japan</li>
+                <li>tel: 000-0000-0000</li>
+                <li>url: www.xxxxxx.jp</li>
+                <li>mail: xxx@xxxxxx.jp</li>
+            </ul>
+            <p>プロフィーYUテキストテキストテキストテキストテキストテキストテキストテキストスト テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+        </section>
+        <section id="works" class="wrapper">
+            <h2 class="section-title">Works</h2>
+            <ul>
+                <li>
+                    <img src="https://code-jump.com/demo/html/portfolio1/img/works1.jpg" alt="テキストテキストテキスト">
+                </li>
+                <li>
+                    <img src="https://code-jump.com/demo/html/portfolio1/img/works2.jpg" alt="テキストテキストテキスト">
+                </li>
+                <li>
+                    <img src="https://code-jump.com/demo/html/portfolio1/img/works3.jpg" alt="テキストテキストテキスト">
+                </li>
+                <li>
+                    <img src="https://code-jump.com/demo/html/portfolio1/img/works4.jpg" alt="テキストテキストテキスト">
+                </li>
+                <li>
+                    <img src="https://code-jump.com/demo/html/portfolio1/img/works5.jpg" alt="テキストテキストテキスト">
+                </li>
+                <li>
+                    <img src="https://code-jump.com/demo/html/portfolio1/img/works6.jpg" alt="テキストテキストテキスト">
+                </li>
+            </ul>
+        </section>
+        <section id="news" class="wrapper">
+            <h2 class="section-title">News</h2>
+            <dl>
+                <dt>2020.XX.XX</dt>
+                <dd>デザイン雑誌「ＸＸＸＸＸＸ Vol.11』に掲載していただきました。</dd>
+                <dt>2020.XX.XX</dt>
+                <dd>ＸＸ月ＸＸ日から写真集「ＸＸＸＸＸＸＸ」の販売を開始します。</dd>
+                <dt>2019.XX.XX</dt>
+                <dd>【イベント開催のお知らせ】テキストテキストテキストテキストテキストテキストテキスト</dd>
+                <dt>2019.XX.XX</dt>
+                <dd>デザイン雑誌「ＸＸＸＸＸＸ Vol.10』に掲載していただきました。</dd>
+                <dt>2019.XX.XX</dt>
+                <dd>【個展開催のお知らせ】テキストテキストテキストテキストテキストテキストテキスト</dd>
+            </dl>
+        </section>
+        <section id="contact" class="wrapper">
+            <h2 class="section-title">Contact</h2>
+            <form action="#" method="post">
+                <div class="form-item">
+                    <label for="name">NAME</label>
+                    <input type="text" id="name" name="user_name">
+                </div>
+                <div class="form-item">
+                    <label for="e-mail">E-mail</label>
+                    <input type="email" id="email" name="user_email">
+                </div>
+                <div class="form-item">
+                    <label for="message">MESSAGE</label>
+                    <textarea id="message" name="user_message" rows="5"></textarea>
+                </div>    
+                <button type="submit">送信</button>
+            </form>
+        </section>
+    </main>
+    <footer id="footer">
+        <p>© 2020 My Work</p>
+    </footer>
+</body>
+</html>

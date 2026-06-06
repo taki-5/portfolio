@@ -1,0 +1,22 @@
+@media screen and (max-width: 768px) {
+    #header {
+        justify-content: center;
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        max-width: 100%;
+        display: block;
+    }
+
+    #header h1{
+        width: 100%;
+        text-align: center;
+    }
+
+    #mainvisual img {
+        width: 100%;
+        height: auto;
+        display: block;
+        object-fit: cover;
+    }
+}
