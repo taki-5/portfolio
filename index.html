@@ -1,138 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>摸写コーディング３</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header id="header">
-        <div class="site-title">
+<html>
+  <head>
+    <link rel="stylesheet" href="stylesheet.css">
+    <meta charset="utf-8">
+    <title>模写コーディング</title>
+  </head>
+  <body>
+    <header id="header" class="wrapper">
+        <h1 class="site-title">
             <a href="index.html">
-                <img src="https://code-jump.com/demo/html/ec/img/logo.svg" alt="TOTALLY">
+                <img src="https://code-jump.com/demo/html/profile/img/logo.svg" alt="Profile">
             </a>
-        </div>
-        <nav class="wrapper">
-            <ul class="menu">
-                <li>
-                    <a href="#">ALL</a>
-                </li>
-                <li>
-                    <a href="#">NEW</a>
-                </li>
-                <li>
-                    <a href="#">VINTAGE</a>
-                </li>
-                <li>
-                    <a href="#">CATEGORY</a>
-                </li>
-                <li>
-                    <a href="#">LOOKBOOK</a>
-                </li>
-                <li>
-                    <a href="#">BLOG</a>
-                </li>
-            </ul>
-            <ul class="login">
-                <li>
-                    <a href="#">LOGIN</a>
-                </li>
-                <li>
-                    <a href="#">CONTACT</a>
-                </li>
-            </ul>
-        </nav>
+        </h1>
+        <ul>
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#bicycle">Bicycle</a>
+            </li>
+        </ul>
     </header>
     <main>
-        <div id="item" class="wrapper">
-            <div class="item-image">
-                <img src="https://code-jump.com/demo/html/ec/img/item.jpg">
+        <div id="mainvisual">
+            <img src="https://code-jump.com/demo/html/profile/img/mainvisual.jpg" alt="テキスト">
+        </div>
+        <section id="about" class="wrapper">
+            <h2 class="section-title">About</h2>
+            <div class="content">
+                <img src="https://code-jump.com/demo/html/profile/img/about.jpg" alt="テキストテキストテキスト">
+                <div class="text">
+                    <h3 class="content-title">SEIYA</h3>
+                    <P>
+                        テキストテキストテキストテキストテキストテキストテキスト
+                        <br>
+                        テキストテキストテキストテキストテキストテキストテキスト
+                        <br>
+                        テキストテキストテキストテキストテキストテキストテキスト
+
+                    </P>
+                </div>
             </div>
-            <div class="item-info">
-                <h1 class="item-title">TOTALLY Short Sleeve Shirt</h1>
-                <p>テキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキスト テキストテキストテキスト</p>
-                <p>¥9,999+tax</p>
-                <table class="order-table">
-                    <thead>
-                        <tr>
-                            <th class="color">Color</th>
-                            <th class="size">Size</th>
-                            <th class="quantity"></th>
-                        </tr>
-                    </thead> 
-                    <tbody>
-                        <tr>
-                            <td>White</td>
-                            <td>S</td>
-                            <td>
-                                <select name="quantity_s">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                </select>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Red</td>
-                            <td>M</td>
-                            <td>
-                                <select name="quantity_m">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                </select>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Black</td>
-                            <td>L</td>
-                            <td>
-                                <select name="quantiy_l">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                </select>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-                <a class="cart-btn" href="#">ADD TO CART</a>
-                <table class="size-table">
-                    <thead>
-                        <tr>
-                            <th class="size">Size</th>
-                            <th class="chest">Chest</th>
-                            <th class="weist">Weist</th>
-                            <th class="height">Height</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th>S</th>
-                            <td>99~99</td>
-                            <td>99~99</td>
-                            <td>99~99</td>
-                        </tr>
-                        <tr>
-                            <th>M</th>
-                            <td>99~99</td>
-                            <td>99~99</td>
-                            <td>99~99</td>
-                        </tr>
-                        <tr>
-                            <th>L</th>
-                            <td>99~99</td>
-                            <td>99~99</td>
-                            <td>99~99</td>
-                        </tr>
-                    </tbody>
-                </table>    
-            </div>
-        </div>    
+        </section>
+        <section id="bicycle" class="wrapper">
+            <h2 class="section-title">Bicycle</h2>
+            <ul>
+                <li>
+                    <img src="https://code-jump.com/demo/html/profile/img/bicycle1.jpg" alt="テキストテキストテキスト">
+                    <h3 class="content-title">タイトルタイトル</h3>
+                    <p>テキストテキスト</p>
+                </li>
+                <li>
+                    <img src="https://code-jump.com/demo/html/profile/img/bicycle2.jpg" alt="テキストテキストテキスト">
+                    <h3 class="content-title">タイトルタイトル</h3>
+                    <p>テキストテキスト</p>
+                </li>
+                <li>
+                    <img src="https://code-jump.com/demo/html/profile/img/bicycle3.jpg" alt="テキストテキストテキスト">
+                    <h3 class="content-title">タイトルタイトル</h3>
+                    <p>テキストテキスト</p>
+                </li>
+            </ul>
+        </section>
     </main>
-    <footer id="footer" class="wrapper">
-        <p class="copyright">© TOTALLY</p>
+    <footer id="footer">
+        <p>© 2020 Profile</p>
     </footer>
-</body>
+  </body>
+  <body>
+    
+  </body>
 </html>
