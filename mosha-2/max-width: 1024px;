@@ -1,0 +1,37 @@
+@media (max-width: 1024px) {
+    .work ul {
+        flex-direction: column;
+    }
+
+    #mainvisual img {
+        max-width: 1024px;
+        width: 100%;
+        height: auto;
+    }
+
+    #header {
+        height: auto;
+    }
+
+    .about img {
+        width: 100%;
+    }
+
+    #works img {
+        width: 100%;
+    }
+
+    .form-item {
+        flex-direction: column;
+    }
+
+    .form-item label {
+        flex-basis: auto;
+        margin-bottom: 10px;
+    }
+
+    .form-item input,
+    .form-item textarea {
+        width: 100%;
+    }
+}
