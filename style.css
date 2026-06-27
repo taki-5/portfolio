@@ -1,0 +1,394 @@
+/* サイト全体のスクロールを滑らかにする魔法の1行 */
+html {
+  scroll-behavior: smooth;
+}
+/* ==========================================================================
+   ブラウザの初期設定リセット ＆ 全体設定
+   ========================================================================== */
+
+/* 1. すべての要素の余白をゼロにし、サイズ計算を「枠線込み」にする */
+*,
+*::before,
+*::after {
+  box-sizing: border-box; /* これが超重要！ */
+  margin: 0;
+  padding: 0;
+}
+
+/* 2. リンクの文字の下線を消し、文字色を黒（または親要素と同じ）にする */
+a {
+  text-decoration: none;
+  color: inherit; /* 親の文字色を引き継ぐ設定 */
+}
+
+/* 3. 画像の下に生まれる謎の隙間を消し、横揺れを防ぐ */
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+/* 4. サイト全体の文字フォントと背景の基本設定 */
+body {
+  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  color: #222222;           /* 基本の文字色（少し優しい黒） */
+  background-color: #ffffff; /* 基本の背景色（白） */
+  line-height: 1.6;
+  overflow-x: hidden;       /* スマホでの「右側の謎の余白（横揺れ）」を強制的に防ぐ */
+}
+
+
+
+/* ==========================================================================
+   1. 初期設定 ＆ 全体リセット
+   ========================================================================== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  color: #222222;
+  background-color: #ffffff;
+  line-height: 1.8;
+  overflow-x: hidden; /* スマホの横揺れバグを防ぐ */
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+/* 共通の見出しパーツ */
+.sub-title {
+  display: block;
+  font-size: 12px;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.25em;
+  color: #888888;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.section-title {
+  font-size: 26px;
+  font-weight: bold;
+  color: #222222;
+  margin-bottom: 35px;
+  text-align: left;
+  letter-spacing: 0.05em;
+}
+
+
+/* ==========================================================================
+   2. レイアウトの土台（画面の横幅を中央に揃える）
+   ========================================================================== */
+.policy-container,
+.about-intro-container,
+.works-section,
+.about-section,     /* 👈ここを追加！ */
+.skill-container {  /* 👈ついでにスキルも中央に寄せるために追加！ */
+  max-width: 1000px; 
+  margin: 0 auto;    
+  padding: 60px 20px; 
+}
+
+
+
+#header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 60px;
+    align-items: center;
+}
+#header ul {
+    display: flex;
+}
+#header li {
+    padding-right: 30px;
+    list-style: none;
+}
+
+
+/* ==========================================================================
+   メインビジュアル（ファーストビュー）の大改造
+   ========================================================================== */
+#mainvisual {
+  background-color: #f8f9fa; /* ごく薄い、上品なライトグレー */
+  width: 100%;
+  height: 60vh;              /* 画面の高さの約6割を使ってゆったり見せる */
+  display: flex;
+  align-items: center;       /* 文字を上下の真ん中に配置 */
+  justify-content: center;    /* 文字を左右の真ん中に配置 */
+  text-align: center;        /* テキスト自体をセンター揃えにする */
+  border-bottom: 1px solid #eeeeee;
+}
+
+.hero-content {
+  padding: 0 20px;
+}
+
+/* 英語のメインキャッチコピー */
+.hero-content h2 {
+  font-size: 38px;           /* 文字を大きくして主役に */
+  font-weight: 800;          /* かなり太めにしてインパクトを出す */
+  font-family: 'Montserrat', sans-serif; /* 英語がキレイに見えるフォント */
+  letter-spacing: 0.15em;    /* 文字の間隔を広げて高級感を出す */
+  color: #111111;
+  margin-bottom: 20px;       /* 下の日本語とのすき間 */
+}
+
+/* 日本語のサブキャッチコピー */
+.hero-content h3 {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.2em;     /* 日本語も少し間隔を広げて洗練させる */
+  color: #555555;            /* 文字色を少しだけ優しく */
+}
+
+
+
+
+/* ==========================================================================
+   3. 自己紹介セクション（About）
+   ========================================================================== */
+/* 左側に綺麗な黒い縦線を引く */
+.about-text-box {
+  border-left: 2px solid #222222;
+  padding-left: 25px;
+  margin-bottom: 60px;
+}
+
+.about-lead {
+  font-size: 16px;
+  color: #222222;
+}
+
+/* 大切にしている3つのこと */
+.policy-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.policy-list {
+  list-style: none;
+  padding: 0;
+}
+
+.policy-item {
+  margin-bottom: 35px;
+}
+
+.item-title {
+  display: block;
+  font-size: 17px;
+  font-weight: bold;
+  color: #111111;
+  margin-bottom: 8px;
+}
+
+.item-text {
+  font-size: 15px;
+  color: #555555; /* 本文は少し優しくして読みやすく */
+}
+
+/* ==========================================================================
+   4. 制作実績セクション（Works）
+   ========================================================================== */
+/* 実績を横に2つ並べるための魔法のコード */
+.works-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+/* 実績1つずつの四角いボックス設定 */
+.works-item {
+  width: calc(50% - 20px); /* PCでは2段（50%ずつ）に並べる */
+  box-sizing: border-box;
+}
+
+/* 画像の周りに薄いグレーの綺麗な線を引く */
+.works-image-wrapper {
+  border: 1px solid #e5e5e5;
+  background-color: #fafafa;
+  margin-bottom: 20px;
+  overflow: hidden;
+  height: 250px;
+}
+
+.works-image {
+  width: 100%;
+  height: 250px;
+  display: block;
+  object-fit: cover;
+  object-position: top;
+}
+
+.works-item-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #222222;
+  margin-bottom: 12px;
+}
+
+.works-item-desc {
+  font-size: 14px;
+  color: #666666;
+  margin-bottom: 25px;
+  min-height: 68px; /* 説明文の長さがズレてもボタンの位置を揃える */
+}
+
+/* 線だけで囲まれた透明なボタン */
+.works-btn {
+  display: inline-block;
+  padding: 12px 35px;
+  border: 1px solid #222222;
+  color: #222222;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  transition: all 0.3s ease; /* ふわっと動かす設定 */
+}
+
+/* マウスを乗せたら白黒がひっくり返る */
+.works-btn:hover {
+  background-color: #222222;
+  color: #ffffff;
+}
+
+/* ==========================================================================
+   5. お問い合わせセクション（Contact）
+   ========================================================================== */
+.contact-section {
+  background-color: #1a1a1a; /* 高級感のある少し優しい黒 */
+  padding: 90px 0;
+  text-align: center;       /* 中身をすべて真ん中寄せ */
+}
+
+.contact-inner {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.contact-sub {
+  text-align: center;
+  color: #777777;
+}
+
+.contact-title {
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.contact-text {
+  font-size: 15px;
+  color: #cccccc;
+  margin-bottom: 45px;
+}
+
+/* ボタンを中央で横並びにする */
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.contact-btn {
+  display: inline-block;
+  width: 260px;
+  padding: 16px 0;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  transition: all 0.3s ease;
+}
+
+/* マウスを乗せたら黒背景から白背景に反転 */
+.contact-btn:hover {
+  background-color: #ffffff;
+  color: #1a1a1a;
+}
+
+/* ==========================================================================
+   6. フッター（Footer）
+   ========================================================================== */
+.site-footer {
+  background-color: #111111; /* Contactよりさらに深い真っ黒 */
+  padding: 25px 0;
+  text-align: center;
+  border-top: 1px solid #252525;
+}
+
+.copyright {
+  font-size: 11px;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.1em;
+  color: #555555;
+}
+
+/* ==========================================================================
+   7. 📱 スマホ用のレスポンシブ対応（画面幅767px以下）
+   ========================================================================== */
+@media (max-width: 767px) {
+  .policy-container,
+  .about-intro-container,
+  .works-section {
+    padding: 40px 20px;
+  }
+  
+  /* 実績をスマホでは縦1列（100%）にする */
+  .works-item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .works-item-desc {
+    min-height: auto; /* スマホでは高さ制限を解除 */
+  }
+
+  /* お問い合わせボタンをスマホでは画面いっぱいに広げて押しやすく */
+  .contact-btn {
+    width: 100%;
+  }
+}
+/* 📱 スマホで見たら文字サイズを自動で小さくする（レスポンシブ） */
+@media (max-width: 767px) {
+    #header {
+        flex-direction: column;
+    }
+    #header .site-title {
+        padding: 30px 0;
+    }
+    #header li {
+        padding: 30px 15px;
+    }
+  #mainvisual {
+    height: 50vh;            /* スマホでは高さを少しコンパクトに */
+  }
+  .hero-content h2 {
+    font-size: 24px;         /* スマホで画面からはみ出さないサイズに */
+    letter-spacing: 0.1em;
+  }
+  .hero-content h3 {
+    font-size: 13px;
+    line-height: 1.6;
+  }
+}
