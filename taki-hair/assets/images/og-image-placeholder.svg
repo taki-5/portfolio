@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+<defs>
+<linearGradient id="bgog" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#4f5d43"/><stop offset="100%" stop-color="#5a4a34"/></linearGradient>
+<filter id="softOg" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="24"/></filter>
+</defs>
+
+  <rect width="1200" height="630" fill="url(#bgog)"/>
+  <g><path d="M54.3,-60 C-20.3,166.9 -23.4,479.8 -89.7,690.0" stroke="#e6dac3" stroke-width="46.5" fill="none" opacity="0.14" stroke-linecap="round" filter="url(#softOg)"/>
+<path d="M264.8,-60 C322.1,182.0 246.2,445.7 283.4,690.0" stroke="#e6dac3" stroke-width="61.8" fill="none" opacity="0.12" stroke-linecap="round" filter="url(#softOg)"/>
+<path d="M461.8,-60 C433.3,194.2 427.5,418.5 401.3,690.0" stroke="#e6dac3" stroke-width="63.7" fill="none" opacity="0.18" stroke-linecap="round" filter="url(#softOg)"/>
+<path d="M490.2,-60 C547.3,200.0 638.3,450.5 704.7,690.0" stroke="#e6dac3" stroke-width="52.9" fill="none" opacity="0.13" stroke-linecap="round" filter="url(#softOg)"/>
+<path d="M568.6,-60 C591.8,184.9 433.9,449.8 426.5,690.0" stroke="#e6dac3" stroke-width="73.8" fill="none" opacity="0.16" stroke-linecap="round" filter="url(#softOg)"/>
+<path d="M928.0,-60 C876.8,209.2 900.6,419.4 859.6,690.0" stroke="#e6dac3" stroke-width="69.3" fill="none" opacity="0.16" stroke-linecap="round" filter="url(#softOg)"/>
+<path d="M1079.3,-60 C1151.8,153.5 1216.9,405.5 1292.4,690.0" stroke="#e6dac3" stroke-width="55.9" fill="none" opacity="0.18" stroke-linecap="round" filter="url(#softOg)"/>
+<path d="M1034.5,-60 C975.9,170.7 1039.3,403.8 998.7,690.0" stroke="#e6dac3" stroke-width="49.8" fill="none" opacity="0.15" stroke-linecap="round" filter="url(#softOg)"/></g>
+  <text x="60" y="330" font-family="'Shippori Mincho',serif" font-size="86" font-weight="700"
+        fill="#ffffff">Taki Hair</text>
+  <text x="64" y="380" font-family="'Noto Sans JP',sans-serif" font-size="28"
+        fill="#f1e9da" opacity="0.9">高崎市の髪質改善サロン</text>
+
+</svg>

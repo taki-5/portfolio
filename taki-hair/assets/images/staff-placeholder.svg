@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="900" viewBox="0 0 700 900">
+<defs>
+<linearGradient id="bgst" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#f1e9da"/><stop offset="100%" stop-color="#b9a684"/></linearGradient>
+<radialGradient id="glowst" cx="50%" cy="45%" r="65%"><stop offset="0%" stop-color="#fff6e6" stop-opacity="0.6"/><stop offset="55%" stop-color="#fff6e6" stop-opacity="0.270"/><stop offset="100%" stop-color="#fff6e6" stop-opacity="0"/></radialGradient>
+<filter id="softStaff" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="9"/></filter>
+</defs>
+
+  <rect width="700" height="900" fill="url(#bgst)"/>
+  <circle cx="350.0" cy="360.0" r="405.0" fill="url(#glowst)"/>
+  
+  <g filter="url(#softStaff)">
+    <ellipse cx="350" cy="774" rx="294" ry="288" fill="#a9a08e" opacity="0.9"/>
+    <path d="M273,540 L350,639 L427,540" stroke="#c99b74" stroke-width="12.6" fill="none" opacity="0.45"/>
+    <ellipse cx="350" cy="307" rx="137" ry="123" fill="#4a3a2c" opacity="0.85"/>
+    <ellipse cx="350" cy="324" rx="120" ry="129" fill="#c99b74" opacity="0.92"/>
+  </g>
+  <ellipse cx="280" cy="254" rx="70" ry="56"
+           fill="#ffffff" opacity="0.12" filter="url(#softStaff)"/>
+
+  <text x="680" y="880" text-anchor="end" font-family="'Noto Sans JP',sans-serif"
+        font-size="13" fill="#5a4a34" opacity="0.3">staff.jpg に差し替え推奨</text>
+
+</svg>
